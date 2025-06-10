@@ -104,7 +104,6 @@ function App() {
       <ClickerDisplay credits={Math.floor(credits)} multiplier={clickMultiplier} boosterTime={boosterTime} />
       <ClickButton onClick={click} disabled={isClickBlocked} />
 
-      {/* Панель вкладок */}
       <div className={styles.tabButtons}>
         <button onClick={() => setActiveTab("upgrades")}>🛠️ Апгрейди</button>
         <button onClick={() => setActiveTab("bonuses")}>🎁 Бонуси</button>
@@ -114,7 +113,6 @@ function App() {
         <button onClick={() => setActiveTab("achievements")}>🎖️ Досягнення</button>
       </div>
 
-      {/* Активна панель */}
       <div className={styles.tabContent}>
         {renderActiveTab()}
       </div>

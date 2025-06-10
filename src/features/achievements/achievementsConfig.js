@@ -1,4 +1,3 @@
-// src/features/achievements/achievementsConfig.js
 export const achievementsConfig = [
   {
     id: "first_click",

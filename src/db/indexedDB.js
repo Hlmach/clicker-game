@@ -2,7 +2,6 @@ const DB_NAME = "ClickerGameDB";
 const STORE_NAME = "GameState";
 const DB_VERSION = 4;
 
-// Створення store
 function createObjectStore(db) {
   if (!db.objectStoreNames.contains(STORE_NAME)) {
     db.createObjectStore(STORE_NAME);
