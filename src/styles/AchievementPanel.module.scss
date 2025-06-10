@@ -1,0 +1,29 @@
+.panel {
+  padding: 20px;
+  background: var(--bg-color);
+  border-radius: 10px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.unlocked {
+  background: #d4edda;
+  color: #155724;
+  margin: 10px 0;
+  padding: 10px;
+  border-left: 6px solid #28a745;
+  border-radius: 6px;
+}
+
+.locked {
+  background: #f8d7da;
+  color: #721c24;
+  margin: 10px 0;
+  padding: 10px;
+  border-left: 6px solid #dc3545;
+  border-radius: 6px;
+  opacity: 0.6;
+}

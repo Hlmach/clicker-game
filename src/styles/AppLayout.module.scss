@@ -1,0 +1,82 @@
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.saveMessage {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  background-color: #f0f8ff;
+  color: #174f6b;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeInOut 3s ease-out;
+}
+
+.antiBonusMessage {
+  position: fixed;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 9999;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  animation: fadeInOut 3s ease-out;
+}
+
+.tabButtons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+  gap: 8px;
+  flex-wrap: wrap;
+
+  button {
+    padding: 10px 16px;
+    font-size: 14px;
+    background: var(--primary, #444);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:hover {
+      background: var(--primary-dark, #333);
+    }
+
+    &:disabled {
+      background-color: #ccc;
+      color: #666;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.tabContent {
+  margin-top: 25px;
+}
+
+/* Анімація */
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}

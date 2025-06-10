@@ -1,0 +1,13 @@
+/* src/App.scss */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}

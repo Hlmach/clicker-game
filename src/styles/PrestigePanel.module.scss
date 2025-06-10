@@ -1,0 +1,33 @@
+.panel {
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  margin: 0 auto;
+  max-width: 700px;
+  text-align: center;
+}
+
+.panel h2 {
+  margin-bottom: 20px;
+}
+
+.panel button {
+  padding: 10px 16px;
+  background: var(--primary, #444);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+
+  &:hover {
+    background: var(--primary-dark, #333);
+  }
+
+  &:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+  }
+}
